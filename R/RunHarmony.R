@@ -144,7 +144,7 @@ RunHarmony.Seurat <- function(
     reference_values
   )
 
-  reduction.key <- Seurat::Key(reduction.save, quiet = TRUE)
+  reduction.key <- reduction.save
   rownames(harmonyEmbed) <- rownames(embedding)
   colnames(harmonyEmbed) <- paste0(reduction.key, seq_len(ncol(harmonyEmbed)))
 
